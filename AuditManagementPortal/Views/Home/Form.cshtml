@@ -1,0 +1,29 @@
+﻿@model AuditRequest
+@{
+    ViewData["Title"] = "Form";
+}
+<head>
+</head>
+<body>
+
+    <h3>Please enter the following details</h3>
+    @using (Html.BeginForm("AuditResult", "Home"))
+    {
+        <div class="form-check m-4">
+            @Html.TextBoxFor(m => m.ProjectName, new { @class = "form-control", placeholder = "Project Name", autofocus = "", required = "" })
+        </div>
+        <div class="form-check m-4">
+            @Html.TextBoxFor(m => m.ProjectManagerName, new { @class = "form-control", placeholder = "Project Manager Name", autofocus = "", required = "" })
+        </div>
+        <div class="form-check m-4">
+            @Html.TextBoxFor(m => m.ApplicationOwnerName, new { @class = "form-control", placeholder = "Project Owner Name", autofocus = "", required = "" })
+        </div>
+        <div class="form-check m-4">
+            @Html.DropDownListFor(m => m.AuditDetails.AuditType, new SelectList(new List<string> { "Internal", "SOX" }), "Select Audit Type", new { @class = "form-control",required=""})
+            @Html.ValidationMessageFor(m=>m.AuditDetails.AuditType)
+        </div>
+        <button type="submit" class="btn btn-primary m-1">SAVE</button>
+        <button type="reset" class="btn btn-primary m-1">RESET</button>
+
+    }
+</body>

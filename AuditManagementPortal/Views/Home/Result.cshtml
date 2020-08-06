@@ -1,0 +1,18 @@
+﻿@model AuditResponse
+@{
+    ViewData["Title"] = "Result";
+}
+
+<h1>Result</h1>
+<div class="form-group">
+    @Html.LabelFor(m=>m.AuditId)
+    @Html.TextBoxFor(m=>m.AuditId, new { @class="form-control",@readonly="readonly" })
+</div>
+<div class="form-group">
+    @Html.LabelFor(m=>m.ProjectExecutionStatus)
+    @Html.TextBoxFor(m=>m.ProjectExecutionStatus, new { @class="form-control",@readonly="readonly" })
+</div>
+<div class="form-group">
+    @Html.LabelFor(m=>m.RemedialActionDuration)
+    @Html.TextBoxFor(m=>m.RemedialActionDuration, new { @class="form-control",@readonly="readonly" })
+</div>
