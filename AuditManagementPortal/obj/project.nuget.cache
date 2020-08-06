@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bXDQ6JKRYnXUD53xgwywFUHPbsxkb22W0GYS6Gj7ergK70Uvq1kBub3nWn7or5AcZnIfCS1dILfip+2uWorB/w==",
+  "dgSpecHash": "Z2FVEcxaCqPXEf5o0iH92jIBNqLAD/BzkqDzu3KhMfwQSCj1ejgn45fNdHFwbpC9N+NbtkFNJqDknxnG7BsJ9g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Subhanshu\\source\\repos\\Audit management portal\\Audit management portal.csproj",
+  "projectFilePath": "C:\\Users\\Subhanshu\\source\\AMP\\AuditManagementPortal\\Audit management portal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Subhanshu\\.nuget\\packages\\log4net\\2.0.8\\log4net.2.0.8.nupkg.sha512",
     "C:\\Users\\Subhanshu\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

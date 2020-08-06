@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Subhanshu\\source\\repos\\Audit management portal\\Audit management portal.csproj": {}
+    "C:\\Users\\Subhanshu\\source\\AMP\\AuditManagementPortal\\Audit management portal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Subhanshu\\source\\repos\\Audit management portal\\Audit management portal.csproj": {
+    "C:\\Users\\Subhanshu\\source\\AMP\\AuditManagementPortal\\Audit management portal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Subhanshu\\source\\repos\\Audit management portal\\Audit management portal.csproj",
+        "projectUniqueName": "C:\\Users\\Subhanshu\\source\\AMP\\AuditManagementPortal\\Audit management portal.csproj",
         "projectName": "Audit management portal",
-        "projectPath": "C:\\Users\\Subhanshu\\source\\repos\\Audit management portal\\Audit management portal.csproj",
+        "projectPath": "C:\\Users\\Subhanshu\\source\\AMP\\AuditManagementPortal\\Audit management portal.csproj",
         "packagesPath": "C:\\Users\\Subhanshu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Subhanshu\\source\\repos\\Audit management portal\\obj\\",
+        "outputPath": "C:\\Users\\Subhanshu\\source\\AMP\\AuditManagementPortal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

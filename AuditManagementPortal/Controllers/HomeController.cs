@@ -1,19 +1,18 @@
-﻿using System;
+﻿using Audit_management_portal.Models;
+using Authorization_service;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Dynamic;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Audit_management_portal.Models;
-using Authorization_service;
-using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace Audit_management_portal.Controllers
 {
@@ -119,7 +118,18 @@ namespace Audit_management_portal.Controllers
 
             }
             AuditResponse resp = JsonConvert.DeserializeObject<AuditResponse>(Result);
-
+            var CheckIfAlreadyExists = db.AuditResponseDB.Where(x => x.AuditId == resp.AuditId).FirstOrDefault();
+            if (CheckIfAlreadyExists != null)
+            {
+                while (true)
+                {
+                    Random r = new Random();
+                    resp.AuditId = r.Next(1, 99999);
+                    var NewNumber = db.AuditResponseDB.Where(x => x.AuditId == resp.AuditId).FirstOrDefault();
+                    if (NewNumber == null)
+                        break;
+                }
+            }
             db.AuditResponseDB.Add(resp);
             db.SaveChanges();
             return View("Result",resp);
