@@ -118,14 +118,14 @@ namespace Audit_management_portal.Controllers
 
             }
             AuditResponse resp = JsonConvert.DeserializeObject<AuditResponse>(Result);
-            var CheckIfAlreadyExists = db.AuditResponseDB.Where(x => x.AuditId == resp.AuditId).FirstOrDefault();
+            var CheckIfAlreadyExists = db.AuditResponseDB.FirstOrDefault(x => x.AuditId == resp.AuditId);
             if (CheckIfAlreadyExists != null)
             {
                 while (true)
                 {
                     Random r = new Random();
                     resp.AuditId = r.Next(1, 99999);
-                    var NewNumber = db.AuditResponseDB.Where(x => x.AuditId == resp.AuditId).FirstOrDefault();
+                    var NewNumber = db.AuditResponseDB.FirstOrDefault(x => x.AuditId == resp.AuditId);
                     if (NewNumber == null)
                         break;
                 }

@@ -1289,3 +1289,11 @@ INFO  08:55:15 Content root path: C:\Users\Subhanshu\source\repos\Audit manageme
 INFO  08:55:15 Content root path: C:\Users\Subhanshu\source\repos\Audit management portal
 INFO  08:55:15 Login Successful
 INFO  08:55:24 Token Generated
+INFO  10:23:12 Application started. Press Ctrl+C to shut down.
+INFO  10:23:12 Application started. Press Ctrl+C to shut down.
+INFO  10:23:12 Hosting environment: Development
+INFO  10:23:12 Hosting environment: Development
+INFO  10:23:12 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  10:23:12 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  10:23:13 Login Successful
+INFO  10:23:20 Token Generated
