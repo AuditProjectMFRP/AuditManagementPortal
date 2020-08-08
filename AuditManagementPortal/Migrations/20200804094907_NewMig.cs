@@ -7,7 +7,7 @@ namespace Audit_management_portal.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "AuditResponseDB",
+                name: "AuditResponse",
                 columns: table => new
                 {
                     AuditId = table.Column<int>(nullable: false),
@@ -16,14 +16,14 @@ namespace Audit_management_portal.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AuditResponseDB", x => x.AuditId);
+                    table.PrimaryKey("PK_AuditResponse", x => x.AuditId);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "AuditResponseDB");
+                name: "AuditResponse");
         }
     }
 }

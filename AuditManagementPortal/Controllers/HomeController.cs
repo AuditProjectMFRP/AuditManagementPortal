@@ -22,7 +22,7 @@ namespace Audit_management_portal.Controllers
 
         static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(HomeController));
 
-        public static AuditRequest REQ=new AuditRequest();
+        public  AuditRequest REQ=new AuditRequest();
 
         private readonly DataBaseContext db;
 
@@ -79,7 +79,7 @@ namespace Audit_management_portal.Controllers
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
-                HttpResponseMessage response = await client.GetAsync("api/AuditCheckList/?AuditType=" + Request.AuditDetails.AuditType);
+                HttpResponseMessage response = await client.GetAsync("AuditCheckList/?AuditType=" + Request.AuditDetails.AuditType);
                 if (response.IsSuccessStatusCode)
                 {
                     Result = response.Content.ReadAsStringAsync().Result;
@@ -118,19 +118,19 @@ namespace Audit_management_portal.Controllers
 
             }
             AuditResponse resp = JsonConvert.DeserializeObject<AuditResponse>(Result);
-            var CheckIfAlreadyExists = db.AuditResponseDB.FirstOrDefault(x => x.AuditId == resp.AuditId);
+            var CheckIfAlreadyExists = db.AuditResponse.FirstOrDefault(x => x.AuditId == resp.AuditId);
             if (CheckIfAlreadyExists != null)
             {
                 while (true)
                 {
                     Random r = new Random();
                     resp.AuditId = r.Next(1, 99999);
-                    var NewNumber = db.AuditResponseDB.FirstOrDefault(x => x.AuditId == resp.AuditId);
+                    var NewNumber = db.AuditResponse.FirstOrDefault(x => x.AuditId == resp.AuditId);
                     if (NewNumber == null)
                         break;
                 }
             }
-            db.AuditResponseDB.Add(resp);
+            db.AuditResponse.Add(resp);
             db.SaveChanges();
             return View("Result",resp);
         }

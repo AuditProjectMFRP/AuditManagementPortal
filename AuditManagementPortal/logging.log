@@ -1297,3 +1297,168 @@ INFO  10:23:12 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementP
 INFO  10:23:12 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
 INFO  10:23:13 Login Successful
 INFO  10:23:20 Token Generated
+INFO  01:07:34 Application started. Press Ctrl+C to shut down.
+INFO  01:07:34 Application started. Press Ctrl+C to shut down.
+INFO  01:07:34 Hosting environment: Development
+INFO  01:07:34 Hosting environment: Development
+INFO  01:07:34 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  01:07:34 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  01:07:34 Login Successful
+INFO  01:07:59 Login Successful
+INFO  01:08:54 Token Generated
+ERROR 01:16:09 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Newtonsoft.Json.Utilities.ValidationUtils.ArgumentNotNull(Object value, String parameterName)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Audit_management_portal.Controllers.HomeController.AuditResult(AuditRequest Request) in C:\Users\Subhanshu\source\AMP\AuditManagementPortal\Controllers\HomeController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 01:16:09 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Newtonsoft.Json.Utilities.ValidationUtils.ArgumentNotNull(Object value, String parameterName)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Audit_management_portal.Controllers.HomeController.AuditResult(AuditRequest Request) in C:\Users\Subhanshu\source\AMP\AuditManagementPortal\Controllers\HomeController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  01:17:00 Application started. Press Ctrl+C to shut down.
+INFO  01:17:00 Application started. Press Ctrl+C to shut down.
+INFO  01:17:00 Hosting environment: Development
+INFO  01:17:00 Hosting environment: Development
+INFO  01:17:00 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  01:17:00 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  01:17:00 Login Successful
+INFO  01:17:07 Token Generated
+INFO  02:57:28 Application started. Press Ctrl+C to shut down.
+INFO  02:57:28 Application started. Press Ctrl+C to shut down.
+INFO  02:57:28 Hosting environment: Development
+INFO  02:57:28 Hosting environment: Development
+INFO  02:57:28 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  02:57:28 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  02:57:28 Login Successful
+INFO  02:59:28 Application started. Press Ctrl+C to shut down.
+INFO  02:59:28 Application started. Press Ctrl+C to shut down.
+INFO  02:59:28 Hosting environment: Development
+INFO  02:59:28 Hosting environment: Development
+INFO  02:59:28 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  02:59:28 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  02:59:28 Login Successful
+INFO  10:42:38 Application started. Press Ctrl+C to shut down.
+INFO  10:42:38 Application started. Press Ctrl+C to shut down.
+INFO  10:42:38 Hosting environment: Development
+INFO  10:42:38 Hosting environment: Development
+INFO  10:42:38 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  10:42:38 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  10:42:39 Login Successful
+INFO  10:43:52 Token Generated
+INFO  10:51:52 Application started. Press Ctrl+C to shut down.
+INFO  10:51:52 Application started. Press Ctrl+C to shut down.
+INFO  10:51:52 Hosting environment: Development
+INFO  10:51:52 Hosting environment: Development
+INFO  10:51:52 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  10:51:52 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  10:51:52 Login Successful
+INFO  10:52:01 Token Generated
+INFO  10:52:04 Login Successful
+INFO  10:57:36 Application started. Press Ctrl+C to shut down.
+INFO  10:57:36 Application started. Press Ctrl+C to shut down.
+INFO  10:57:36 Hosting environment: Development
+INFO  10:57:36 Hosting environment: Development
+INFO  10:57:36 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  10:57:36 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  10:57:36 Login Successful
+INFO  10:57:40 Login Successful
+INFO  10:57:41 Login Successful
+INFO  10:57:42 Login Successful
+INFO  11:02:19 Application started. Press Ctrl+C to shut down.
+INFO  11:02:19 Application started. Press Ctrl+C to shut down.
+INFO  11:02:19 Hosting environment: Development
+INFO  11:02:19 Hosting environment: Development
+INFO  11:02:19 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  11:02:19 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  11:02:19 Login Successful
+ERROR 11:02:19 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The layout view '~/Views/Shared/_FirstLayout' could not be located. The following locations were searched:
+~/Views/Shared/_FirstLayout
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.GetLayoutPage(ViewContext context, String executingFilePath, String layoutPath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 11:02:19 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The layout view '~/Views/Shared/_FirstLayout' could not be located. The following locations were searched:
+~/Views/Shared/_FirstLayout
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.GetLayoutPage(ViewContext context, String executingFilePath, String layoutPath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  11:03:06 Application started. Press Ctrl+C to shut down.
+INFO  11:03:06 Application started. Press Ctrl+C to shut down.
+INFO  11:03:06 Hosting environment: Development
+INFO  11:03:06 Hosting environment: Development
+INFO  11:03:06 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  11:03:06 Content root path: C:\Users\Subhanshu\source\AMP\AuditManagementPortal
+INFO  11:03:06 Login Successful
+INFO  11:03:16 Token Generated

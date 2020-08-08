@@ -10,24 +10,11 @@
 </div>
 @using (Html.BeginForm("Audit", "Home")) {
     <table class="table">
-        @*@for (int i= 0; i < Model.Count; i++)
-        {
 
-            <tr>
-                <td>@Model.Keys.ElementAt(i)</td>
-                @*<td>YES @Html.RadioButtonFor(m => m.ElementAt(i).Value, "YES", new { id = "question"+i, Name=""+@i})<td>
-                <input type="radio"/>
-                <td>NO @Html.RadioButtonFor(m => m.ElementAt(i).Value, "NO", new { id = "question"+i, Name = "" + @i })</td>
-                <td>@Html.DropDownList(Model.Values.ElementAt(i), new SelectList(new List<string> { "YES", "NO" }), new { @class = "form-control", required = "" })</td>
-            </tr>
-
-        }*@
-        
         @foreach (var item in Model)
         {
             <tr>
                 <td>@item.Key</td>
-                @*<td>@Html.DropDownList(item.Key, new SelectList(new List<string> { "YES", "NO" }), new { @class = "form-control", required = "" })</td>*@
                 <td>YES @Html.RadioButton(item.Key,"YES",new {required=""})</td>
                 <td>NO @Html.RadioButton(item.Key,"NO", new { required = "" })</td>
 

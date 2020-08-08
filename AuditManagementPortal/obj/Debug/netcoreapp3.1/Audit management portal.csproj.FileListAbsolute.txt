@@ -298,3 +298,4 @@ C:\Users\Subhanshu\source\AMP\AuditManagementPortal\obj\Debug\netcoreapp3.1\stat
 C:\Users\Subhanshu\source\AMP\AuditManagementPortal\obj\Debug\netcoreapp3.1\Audit management portal.dll
 C:\Users\Subhanshu\source\AMP\AuditManagementPortal\obj\Debug\netcoreapp3.1\Audit management portal.pdb
 C:\Users\Subhanshu\source\AMP\AuditManagementPortal\obj\Debug\netcoreapp3.1\Audit management portal.genruntimeconfig.cache
+C:\Users\Subhanshu\source\AMP\AuditManagementPortal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_FirstLayout.cshtml.g.cs

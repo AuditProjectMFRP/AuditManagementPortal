@@ -12,7 +12,7 @@ namespace Audit_management_portal.Models
         public DataBaseContext(DbContextOptions<DataBaseContext> options) : base(options)
         {
         }
-        public DbSet<AuditResponse> AuditResponseDB { get; set; }
+        public DbSet<AuditResponse> AuditResponse { get; set; }
 
     }
 }
