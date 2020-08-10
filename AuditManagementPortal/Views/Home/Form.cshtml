@@ -10,18 +10,19 @@
     @using (Html.BeginForm("AuditResult", "Home"))
     {
         <div class="form-check m-4">
-            @Html.TextBoxFor(m => m.ProjectName, new { @class = "form-control", placeholder = "Project Name", autofocus = "", required = "" })
+            @Html.TextBoxFor(m => m.ProjectName, new { @class = "form-control", placeholder = "Project Name", autofocus = "", required = "", maxlength="20", title = "Project Name should be less than 20 characters" })
         </div>
         <div class="form-check m-4">
-            @Html.TextBoxFor(m => m.ProjectManagerName, new { @class = "form-control", placeholder = "Project Manager Name", autofocus = "", required = "" })
+            @Html.TextBoxFor(m => m.ProjectManagerName, new { @class = "form-control", placeholder = "Project Manager Name", autofocus = "", required = "",maxlength = "20" })
         </div>
         <div class="form-check m-4">
-            @Html.TextBoxFor(m => m.ApplicationOwnerName, new { @class = "form-control", placeholder = "Project Owner Name", autofocus = "", required = "" })
+            @Html.TextBoxFor(m => m.ApplicationOwnerName, new { @class = "form-control", placeholder = "Project Owner Name", autofocus = "", required = "", maxlength = "20" })
         </div>
         <div class="form-check m-4">
-            @Html.DropDownListFor(m => m.AuditDetails.AuditType, new SelectList(new List<string> { "Internal", "SOX" }), "Select Audit Type", new { @class = "form-control",required=""})
-            @Html.ValidationMessageFor(m=>m.AuditDetails.AuditType)
-        </div>
+            @Html.DropDownListFor(m => m.AuditDetails.AuditType, new SelectList(new List<string>
+    { "Internal", "SOX" }), "Select Audit Type", new { @class = "form-control",required="",oninvalid = "this.setCustomValidity('Please select an Audit Type')" , oninput="setCustomValidity('')"})
+    @Html.ValidationMessageFor(m => m.AuditDetails.AuditType)
+</div>
         <button type="submit" class="btn btn-primary m-1">NEXT</button>
         <button type="reset" class="btn btn-primary m-1">RESET</button>
 

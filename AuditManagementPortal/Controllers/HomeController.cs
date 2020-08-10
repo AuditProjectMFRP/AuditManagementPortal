@@ -16,14 +16,14 @@ using System.Threading.Tasks;
 
 namespace Audit_management_portal.Controllers
 {
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(HomeController));
 
-        static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(HomeController));
-
-        public  AuditRequest REQ=new AuditRequest();
-
+        static AuditRequest REQ=new AuditRequest(){AuditDetails =new AuditDetails()};
+        
         private readonly DataBaseContext db;
 
         private IConfiguration _config;
@@ -33,7 +33,9 @@ namespace Audit_management_portal.Controllers
         {
             db = context;
             _config = config;
-        }
+           
+
+    }
 
         public IActionResult Index()
         {
@@ -47,7 +49,7 @@ namespace Audit_management_portal.Controllers
 
         public ActionResult Authenticate(User user)
         {
-            token = GetToken(_config["Links:Authorization"], user);
+            token = GetToken(_config["Links:Authorization"]+"token", user);
 
             if (token == null)
             {
@@ -70,6 +72,7 @@ namespace Audit_management_portal.Controllers
 
         public async Task<IActionResult> AuditResult(AuditRequest Request)
         {
+            //REQ.AuditDetails.AuditType=Request.AuditDetails.AuditType;
             REQ = Request;
             string Result=null;
             using (var client = new HttpClient())
@@ -110,7 +113,7 @@ namespace Audit_management_portal.Controllers
             using (var client = new HttpClient())
             {
                 client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
-                HttpResponseMessage response = await client.PostAsync(_config["Links:AuditSeverity"],new StringContent(JsonConvert.SerializeObject(REQ),Encoding.UTF8,"application/json"));
+                HttpResponseMessage response = await client.PostAsync(_config["Links:AuditSeverity"]+"AuditSeverity",new StringContent(JsonConvert.SerializeObject(REQ),Encoding.UTF8,"application/json"));
                 if (response.IsSuccessStatusCode)
                 {
                     Result = response.Content.ReadAsStringAsync().Result;
@@ -155,4 +158,5 @@ namespace Audit_management_portal.Controllers
             }
         }
     }
+
 }
